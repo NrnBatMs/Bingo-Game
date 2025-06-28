@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Memory Bingo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="registration">
+    <h1>Memory Bingo</h1>
+    <input type="text" id="teamName" placeholder="Enter team name">
+    <button id="startGame">Start Game</button>
+  </div>
+
+  <div id="gameBoard" class="hidden">
+    <h2 id="currentTeam"></h2>
+    <div id="grid"></div>
+    <p id="timer">Time: 5:00</p>
+    <button id="endGame">End Game</button>
+  </div>
+
+  <div id="scoreboard">
+    <h2>Scoreboard</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Rank</th>
+          <th>Team</th>
+          <th>Pairs</th>
+          <th>Time</th>
+        </tr>
+      </thead>
+      <tbody id="scoreTable"></tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
